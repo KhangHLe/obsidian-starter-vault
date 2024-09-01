@@ -1,0 +1,12 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "deadline": "date",
+    "scheduled": "date",
+    "closed": "datetime",
+    "start": "datetime",
+    "end": "datetime"
+  }
+}

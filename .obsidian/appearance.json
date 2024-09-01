@@ -1,0 +1,14 @@
+{
+  "accentColor": "#4c8ce6",
+  "cssTheme": "",
+  "theme": "moonstone",
+  "translucency": true,
+  "enabledCssSnippets": [
+    "supercharged-links-gen",
+    "show-hover-title",
+    "datacore-classes",
+    "file-explorer-wrap",
+    "files-divider"
+  ],
+  "showViewHeader": true
+}

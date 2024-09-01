@@ -1,0 +1,7 @@
+{
+  "deleteFileAfterConversion": false,
+  "importComments": false,
+  "fallbackAttachmentName": "Attachment",
+  "attachmentsFolder": "custom",
+  "customAttachmentsFolder": "INBOX"
+}

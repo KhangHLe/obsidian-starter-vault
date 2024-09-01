@@ -1,0 +1,48 @@
+.nav-file {
+    position: relative;
+}
+
+.nav-file:has(> :is([data-path="TODAY.md"]), > :is([data-path="ZETTELKASTEN.md"])) {
+    &::before {
+        content: " ";
+        display: block;
+        height: 1em;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 0;
+        border-top: 1px solid var(--tab-outline-color);
+        z-index: -1;
+    }
+}
+
+.nav-file:has(> :is([data-path="TODAY.md"]))::after {
+    top: calc(0.4em * var(--line-height-tight));
+}
+
+.nav-file:has(> :is([data-path="ZETTELKASTEN.md"]))::after {
+    top: calc(0.3em * var(--line-height-tight));
+}
+
+.nav-file:has(> :is([data-path="LOGBOOK.md"])) {
+    &::after {
+        content: " ";
+        display: block;
+        height: 1em;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: calc(0.4em * var(--line-height-tight));
+        width: 100%;
+        height: 0;
+        border-bottom: 1px solid var(--tab-outline-color);
+        z-index: -1;
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "alwaysUpdateLinks": true,
+  "propertiesInDocument": "visible",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "INBOX",
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "./",
+  "trashOption": "local",
+  "strictLineBreaks": true,
+  "userIgnoreFilters": null,
+  "useTab": false,
+  "promptDelete": false,
+  "spellcheck": false,
+  "readableLineLength": true,
+  "showRibbon": true,
+  "autoConvertHtml": true,
+  "foldHeading": false,
+  "foldIndent": false
+}

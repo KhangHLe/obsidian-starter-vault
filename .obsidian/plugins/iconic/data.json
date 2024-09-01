@@ -1,0 +1,184 @@
+{
+  "biggerIcons": "on",
+  "clickableIcons": "off",
+  "showAllFileIcons": false,
+  "showAllFolderIcons": false,
+  "minimalFolderIcons": true,
+  "showItemName": "on",
+  "biggerSearchResults": "on",
+  "maxSearchResults": 50,
+  "colorPicker1": "list",
+  "colorPicker2": "rgb",
+  "uncolorHover": false,
+  "uncolorDrag": false,
+  "uncolorSelect": false,
+  "rememberDeletedItems": false,
+  "appIcons": {},
+  "tabIcons": {},
+  "fileIcons": {
+    "ANYTIME.md": {
+      "icon": "lucide-layers-3"
+    },
+    "ARCHIVES": {
+      "icon": "lucide-archive",
+      "unsynced": [
+        "acb549b207c48d04"
+      ]
+    },
+    "AREAS": {
+      "icon": "lucide-land-plot",
+      "unsynced": [
+        "acb549b207c48d04"
+      ]
+    },
+    "AREAS/Car": {
+      "icon": "lucide-car",
+      "unsynced": [
+        "acb549b207c48d04"
+      ]
+    },
+    "AREAS/Career": {
+      "icon": "lucide-network",
+      "unsynced": [
+        "acb549b207c48d04"
+      ]
+    },
+    "AREAS/Finance": {
+      "icon": "lucide-wallet",
+      "unsynced": [
+        "acb549b207c48d04"
+      ]
+    },
+    "AREAS/Health": {
+      "icon": "lucide-cross",
+      "unsynced": [
+        "acb549b207c48d04"
+      ]
+    },
+    "AREAS/Home": {
+      "icon": "lucide-home",
+      "unsynced": [
+        "acb549b207c48d04"
+      ]
+    },
+    "AREAS/Personal Development": {
+      "icon": "lucide-book-heart",
+      "unsynced": [
+        "acb549b207c48d04"
+      ]
+    },
+    "AREAS/Relationships": {
+      "icon": "lucide-heart-handshake",
+      "unsynced": [
+        "acb549b207c48d04"
+      ]
+    },
+    "AREAS/Work": {
+      "icon": "lucide-briefcase",
+      "unsynced": [
+        "acb549b207c48d04"
+      ]
+    },
+    "INBOX": {
+      "icon": "lucide-inbox",
+      "unsynced": [
+        "acb549b207c48d04"
+      ]
+    },
+    "LOGBOOK.md": {
+      "icon": "lucide-book-check"
+    },
+    "PROJECTS": {
+      "icon": "lucide-check-square",
+      "unsynced": [
+        "acb549b207c48d04"
+      ]
+    },
+    "PROJECTS/Vault Onboarding": {
+      "icon": "open-vault",
+      "unsynced": [
+        "acb549b207c48d04"
+      ]
+    },
+    "PROJECTS/Vault Onboarding/(Optional) Learn the BASB Method.md": {
+      "icon": "lucide-circle"
+    },
+    "PROJECTS/Vault Onboarding/(Optional) Learn the Zettelkasten Method.md": {
+      "icon": "lucide-circle"
+    },
+    "PROJECTS/Vault Onboarding/Learn Capturing.md": {
+      "icon": "lucide-circle"
+    },
+    "PROJECTS/Vault Onboarding/Learn Task Management.md": {
+      "icon": "lucide-circle"
+    },
+    "PROJECTS/Vault Onboarding/Sorting the files explorer.md": {
+      "icon": "lucide-circle"
+    },
+    "RESOURCES": {
+      "icon": "lucide-library-big",
+      "unsynced": [
+        "acb549b207c48d04"
+      ]
+    },
+    "RESOURCES/Datacore Components": {
+      "icon": "lucide-component",
+      "unsynced": [
+        "acb549b207c48d04"
+      ]
+    },
+    "RESOURCES/Templater Scripts": {
+      "icon": "lucide-file-code-2",
+      "unsynced": [
+        "acb549b207c48d04"
+      ]
+    },
+    "SOMEDAY.md": {
+      "icon": "lucide-archive"
+    },
+    "TODAY.md": {
+      "icon": "lucide-star"
+    },
+    "UPCOMING.md": {
+      "icon": "lucide-calendar-days"
+    },
+    "ZETTELKASTEN.md": {
+      "icon": "lucide-inbox"
+    }
+  },
+  "bookmarkIcons": {
+    "1717135443776": {
+      "icon": "lucide-list-ordered"
+    }
+  },
+  "propertyIcons": {
+    "author": {
+      "icon": "lucide-pen-line"
+    },
+    "closed": {
+      "icon": "lucide-calendar-check"
+    },
+    "deadline": {
+      "icon": "lucide-flag"
+    },
+    "done": {
+      "icon": "lucide-check-circle"
+    },
+    "end": {
+      "icon": "lucide-calendar-clock"
+    },
+    "folgezettel": {
+      "icon": "lucide-inbox"
+    },
+    "recurrence": {
+      "icon": "lucide-repeat"
+    },
+    "start": {
+      "icon": "lucide-calendar-clock"
+    },
+    "url": {
+      "icon": "lucide-external-link"
+    }
+  },
+  "ribbonIcons": {}
+}

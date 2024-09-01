@@ -1,0 +1,249 @@
+{
+  "main": {
+    "id": "3a684e3d72b1de3f",
+    "type": "split",
+    "children": [
+      {
+        "id": "5784ea3650713df1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "783280aa61241a04",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TODAY.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1cc74ffdc00b5e62",
+    "type": "split",
+    "children": [
+      {
+        "id": "d9abe5615cdc71d5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d562b660cc3d66d4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e6c93121a89dbeda",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "3d3f55cac085eea8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#cook",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "209f1e6ab098dfea",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "00f99ce6ac048dfc",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 338.5
+  },
+  "right": {
+    "id": "2a8a2ab132b29b3f",
+    "type": "split",
+    "children": [
+      {
+        "id": "b1703c7993e3ba41",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0acff5af60eff18b",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "TODAY.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 2,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": true,
+                  "showAttachments": true,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": false,
+                  "showArrow": false,
+                  "textFadeMultiplier": -3,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": false,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.5087618855792592,
+                  "close": true
+                }
+              }
+            }
+          },
+          {
+            "id": "d3b67e16c56b7510",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "TODAY.md"
+              }
+            }
+          },
+          {
+            "id": "2785dac4b9d8d5d1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "TODAY.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 370.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "cmdr:Create new task": false,
+      "cmdr:Create new event": false,
+      "canvas:Create new canvas": false,
+      "vscode-editor:Create Code File": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "command-palette:Open command palette": true,
+      "custom-sort:Toggle custom sorting": true,
+      "templater-obsidian:Templater": true,
+      "obsidian42-brat:BRAT": true
+    }
+  },
+  "active": "d562b660cc3d66d4",
+  "lastOpenFiles": [
+    "PROJECTS/Vault Onboarding/Sorting the files explorer.md",
+    "TODAY.md",
+    "PROJECTS/Vault Onboarding/(Optional) Learn the Zettelkasten Method.md",
+    "PROJECTS/Vault Onboarding/Learn Task Management.md",
+    "PROJECTS/Vault Onboarding/Learn Capturing.md",
+    "PROJECTS/Vault Onboarding/My First Zettel.md",
+    "PROJECTS/Vault Onboarding/Combine Zettelkasten and BASB.html",
+    "PROJECTS/Vault Onboarding/You can view this Word Doc.docx",
+    "PROJECTS/Vault Onboarding/(Optional) Learn the BASB Method.md",
+    "ZETTELKASTEN.md",
+    "LOGBOOK.md",
+    "SOMEDAY.md",
+    "ANYTIME.md",
+    "UPCOMING.md",
+    "PROJECTS/Vault Onboarding/You can edit this code.jsx",
+    "AREAS/Relationships",
+    "AREAS/Personal Development",
+    "AREAS/Career",
+    "AREAS/Car",
+    "AREAS/Health",
+    "AREAS/Finance",
+    "AREAS/Work",
+    "RESOURCES/Templater Scripts/Toggle Todo.md",
+    "PROJECTS/Vault Onboarding/Reschedule button.png",
+    "PROJECTS/Vault Onboarding/Create new task button.png",
+    "INBOX/Test.md",
+    "PROJECTS/Task Management Demo/Test.md",
+    "RESOURCES/Templates/Event.md",
+    "RESOURCES/Templater Scripts/Create new task.md",
+    "RESOURCES/Templater Scripts/Create new event.md",
+    "RESOURCES/Templater Scripts/Reschedule.md",
+    "RESOURCES/Templates/Task.md",
+    "PROJECTS/Benefits Enrollment 2024/Waiting For Enrollment to Open.md",
+    "FLEETING.md",
+    "LITERATURE.md",
+    "PROJECTS/Task Management Demo/Demo Task.md",
+    "PROJECTS/R&R—Dealership Library/Add Import from Camera Roll to TruVideo.md",
+    "PROJECTS/R&R—Block Landlines/Opt-In Flow.canvas",
+    "PROJECTS/R&R—Dealership Library/Shared Library Filter.png",
+    "PROJECTS/R&R—Dealership Library/Prospect Library Filters.png",
+    "ARCHIVES/R&R—Text Opt-In Workflow Change/New Text-Opt-In Workflow.canvas",
+    "ARCHIVES/R&R—Block Landlines/Opt-In Flow.canvas",
+    "PROJECTS/R&R—Text Opt-In Workflow Change/New Text-Opt-In Workflow.canvas",
+    "AREAS/Home/AC Filter.jpg",
+    "AREAS/Personal Development/The Ultimate Cheatsheet for Critical Thinking.jpeg",
+    "AREAS/Home/Steve Renshaw (Business Card).png",
+    "PROJECTS/R&R—Dealership Library/New Choose an Option menu.png",
+    "AREAS/Home/Sprinkler Notice.jpg",
+    "AREAS/Home/Harris County MUD No 319.jpg",
+    "PROJECTS/R&R - Block Landlines/Workbench.canvas",
+    "PROJECTS/R&R - TruVideo SDK Upgrade/Research Board.canvas",
+    "PROJECTS/R&R—Add BU Name to OptOut/Research Board.canvas",
+    "ARCHIVES/R&R - TruVideo SDK Upgrade/Research Board.canvas",
+    "Inbox/Workbench.canvas",
+    "Inbox/Workbench.canvas"
+  ]
+}

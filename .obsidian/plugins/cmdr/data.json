@@ -1,0 +1,49 @@
+{
+  "confirmDeletion": false,
+  "showAddCommand": false,
+  "debug": false,
+  "editorMenu": [],
+  "fileMenu": [],
+  "leftRibbon": [
+    {
+      "id": "quickadd:choice:51c875dc-2c5d-4f2b-8a17-f79ef1548ed1",
+      "icon": "check-circle",
+      "name": "Create new task",
+      "mode": "any"
+    },
+    {
+      "id": "quickadd:choice:3d1991cb-ccf6-4f44-88d5-2320a860e081",
+      "icon": "calendar",
+      "name": "Create new event",
+      "mode": "any"
+    }
+  ],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [
+    {
+      "id": "templater-obsidian:RESOURCES/Custom Commands/Reschedule.md",
+      "icon": "calendar",
+      "name": "Reschedule",
+      "mode": "any"
+    }
+  ],
+  "macros": [],
+  "explorer": [],
+  "hide": {
+    "statusbar": [],
+    "leftRibbon": []
+  },
+  "spacing": 8,
+  "advancedToolbar": {
+    "rowHeight": 48,
+    "rowCount": 1,
+    "spacing": 0,
+    "buttonWidth": 48,
+    "columnLayout": false,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 0
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "items": [
+    {
+      "type": "group",
+      "ctime": 1717135443776,
+      "items": [
+        {
+          "type": "folder",
+          "ctime": 1717135484782,
+          "path": "INBOX"
+        },
+        {
+          "type": "file",
+          "ctime": 1721430990881,
+          "path": "TODAY.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1721431010989,
+          "path": "UPCOMING.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1721430996277,
+          "path": "ANYTIME.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1721431006248,
+          "path": "SOMEDAY.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1721431002407,
+          "path": "LOGBOOK.md"
+        },
+        {
+          "type": "folder",
+          "ctime": 1717135437262,
+          "path": "PROJECTS"
+        },
+        {
+          "type": "folder",
+          "ctime": 1717135467293,
+          "path": "AREAS"
+        },
+        {
+          "type": "folder",
+          "ctime": 1717135480281,
+          "path": "RESOURCES"
+        },
+        {
+          "type": "folder",
+          "ctime": 1717135489459,
+          "path": "ARCHIVES"
+        },
+        {
+          "type": "file",
+          "ctime": 1724167655774,
+          "path": "ZETTELKASTEN.md"
+        }
+      ],
+      "title": "SORT ORDER"
+    }
+  ]
+}

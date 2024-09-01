@@ -1,0 +1,27 @@
+.icon {
+    transform: translateY(13%);
+
+    svg {
+        width: 16px;
+        height: 16px;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+}
+
+.icon-in-link {
+    transform: translateY(20%);
+    margin-right: var(--size-2-2);
+    display: inline-flex;
+
+    svg {
+        width: 16px;
+        height: 16px;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+}

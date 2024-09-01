@@ -1,0 +1,8 @@
+{
+  "snapToObjects": true,
+  "snapToGrid": true,
+  "defaultWheelBehavior": "zoom",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "INBOX",
+  "cardLabelVisibility": "never"
+}

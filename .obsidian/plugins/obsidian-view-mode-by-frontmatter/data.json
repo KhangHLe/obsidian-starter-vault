@@ -1,0 +1,37 @@
+{
+  "debounceTimeout": 300,
+  "ignoreOpenFiles": false,
+  "ignoreForceViewAll": false,
+  "folders": [
+    {
+      "folder": "",
+      "viewMode": ""
+    }
+  ],
+  "files": [
+    {
+      "filePattern": "^TODAY$",
+      "viewMode": "obsidianUIMode: preview"
+    },
+    {
+      "filePattern": "^UPCOMING$",
+      "viewMode": "obsidianUIMode: preview"
+    },
+    {
+      "filePattern": "^ANYTIME$",
+      "viewMode": "obsidianUIMode: preview"
+    },
+    {
+      "filePattern": "^SOMEDAY$",
+      "viewMode": "obsidianUIMode: preview"
+    },
+    {
+      "filePattern": "^LOGBOOK$",
+      "viewMode": "obsidianUIMode: preview"
+    },
+    {
+      "filePattern": "^ZETTELKASTEN$",
+      "viewMode": "obsidianUIMode: preview"
+    }
+  ]
+}
