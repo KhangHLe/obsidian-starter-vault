@@ -23,7 +23,7 @@
   "statusBar": [],
   "pageHeader": [
     {
-      "id": "templater-obsidian:RESOURCES/Custom Commands/Reschedule.md",
+      "id": "templater-obsidian:RESOURCES/Templater Scripts/Reschedule.md",
       "icon": "calendar",
       "name": "Reschedule",
       "mode": "any"
