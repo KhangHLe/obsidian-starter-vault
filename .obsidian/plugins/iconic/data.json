@@ -12,7 +12,13 @@
   "uncolorHover": false,
   "uncolorDrag": false,
   "uncolorSelect": false,
+  "uncolorQuick": false,
   "rememberDeletedItems": false,
+  "dialogState": {
+    "iconMode": true,
+    "emojiMode": false,
+    "rulePage": "file"
+  },
   "appIcons": {},
   "tabIcons": {},
   "fileIcons": {
@@ -22,67 +28,78 @@
     "ARCHIVES": {
       "icon": "lucide-archive",
       "unsynced": [
-        "acb549b207c48d04"
+        "acb549b207c48d04",
+        "531366c993ee3a4a"
       ]
     },
     "AREAS": {
       "icon": "lucide-land-plot",
       "unsynced": [
-        "acb549b207c48d04"
+        "acb549b207c48d04",
+        "531366c993ee3a4a"
       ]
     },
     "AREAS/Car": {
       "icon": "lucide-car",
       "unsynced": [
-        "acb549b207c48d04"
+        "acb549b207c48d04",
+        "531366c993ee3a4a"
       ]
     },
     "AREAS/Career": {
       "icon": "lucide-network",
       "unsynced": [
-        "acb549b207c48d04"
+        "acb549b207c48d04",
+        "531366c993ee3a4a"
       ]
     },
     "AREAS/Finance": {
       "icon": "lucide-wallet",
       "unsynced": [
-        "acb549b207c48d04"
+        "acb549b207c48d04",
+        "531366c993ee3a4a"
       ]
     },
     "AREAS/Health": {
       "icon": "lucide-cross",
       "unsynced": [
-        "acb549b207c48d04"
+        "acb549b207c48d04",
+        "531366c993ee3a4a"
       ]
     },
     "AREAS/Home": {
       "icon": "lucide-home",
       "unsynced": [
-        "acb549b207c48d04"
+        "acb549b207c48d04",
+        "531366c993ee3a4a"
       ]
     },
     "AREAS/Personal Development": {
       "icon": "lucide-book-heart",
       "unsynced": [
-        "acb549b207c48d04"
+        "acb549b207c48d04",
+        "531366c993ee3a4a"
       ]
     },
     "AREAS/Relationships": {
       "icon": "lucide-heart-handshake",
       "unsynced": [
-        "acb549b207c48d04"
+        "acb549b207c48d04",
+        "531366c993ee3a4a"
       ]
     },
     "AREAS/Work": {
       "icon": "lucide-briefcase",
       "unsynced": [
-        "acb549b207c48d04"
+        "acb549b207c48d04",
+        "531366c993ee3a4a"
       ]
     },
     "INBOX": {
       "icon": "lucide-inbox",
       "unsynced": [
-        "acb549b207c48d04"
+        "acb549b207c48d04",
+        "531366c993ee3a4a"
       ]
     },
     "LOGBOOK.md": {
@@ -91,46 +108,79 @@
     "PROJECTS": {
       "icon": "lucide-check-square",
       "unsynced": [
-        "acb549b207c48d04"
+        "acb549b207c48d04",
+        "531366c993ee3a4a"
       ]
+    },
+    "PROJECTS/Tresoritos vault setup": {
+      "icon": "open-vault",
+      "color": "blue",
+      "unsynced": [
+        "531366c993ee3a4a"
+      ]
+    },
+    "PROJECTS/Tresoritos vault setup/Jogosultság és társai.md": {
+      "icon": "lucide-check-circle"
+    },
+    "PROJECTS/Tresoritos vault setup/Loop-ból projekteket és a többi átetetni.md": {
+      "icon": "lucide-circle"
     },
     "PROJECTS/Vault Onboarding": {
       "icon": "open-vault",
       "unsynced": [
-        "acb549b207c48d04"
+        "acb549b207c48d04",
+        "531366c993ee3a4a"
       ]
     },
     "PROJECTS/Vault Onboarding/(Optional) Learn the BASB Method.md": {
-      "icon": "lucide-circle"
+      "icon": "lucide-check-circle"
     },
     "PROJECTS/Vault Onboarding/(Optional) Learn the Zettelkasten Method.md": {
+      "icon": "lucide-check-circle"
+    },
+    "PROJECTS/Vault Onboarding/Attolni az eddigieket az uj rendszerbe.md": {
       "icon": "lucide-circle"
     },
     "PROJECTS/Vault Onboarding/Learn Capturing.md": {
-      "icon": "lucide-circle"
+      "icon": "lucide-check-circle"
     },
     "PROJECTS/Vault Onboarding/Learn Task Management.md": {
-      "icon": "lucide-circle"
+      "icon": "lucide-check-circle"
     },
     "PROJECTS/Vault Onboarding/Sorting the files explorer.md": {
+      "icon": "lucide-check-circle"
+    },
+    "PROJECTS/Vault Onboarding/ez az event meg mit tud, miben mas?.md": {
+      "icon": "lucide-calendar-days"
+    },
+    "PROJECTS/Vault Onboarding/gombot a TODO-ra rakjal bele valahogy.md": {
+      "icon": "lucide-circle"
+    },
+    "PROJECTS/Vault Onboarding/projekten belüli tasksorrend.md": {
+      "icon": "lucide-circle"
+    },
+    "PROJECTS/Vault Onboarding/pull request az iconicos fixekre.md": {
       "icon": "lucide-circle"
     },
     "RESOURCES": {
       "icon": "lucide-library-big",
       "unsynced": [
-        "acb549b207c48d04"
+        "acb549b207c48d04",
+        "531366c993ee3a4a"
       ]
     },
     "RESOURCES/Datacore Components": {
       "icon": "lucide-component",
       "unsynced": [
-        "acb549b207c48d04"
+        "acb549b207c48d04",
+        "531366c993ee3a4a"
       ]
     },
     "RESOURCES/Templater Scripts": {
       "icon": "lucide-file-code-2",
       "unsynced": [
-        "acb549b207c48d04"
+        "acb549b207c48d04",
+        "531366c993ee3a4a"
       ]
     },
     "SOMEDAY.md": {
@@ -141,9 +191,6 @@
     },
     "UPCOMING.md": {
       "icon": "lucide-calendar-days"
-    },
-    "ZETTELKASTEN.md": {
-      "icon": "lucide-inbox"
     }
   },
   "bookmarkIcons": {
@@ -151,6 +198,7 @@
       "icon": "lucide-list-ordered"
     }
   },
+  "tagIcons": {},
   "propertyIcons": {
     "author": {
       "icon": "lucide-pen-line"
@@ -180,5 +228,7 @@
       "icon": "lucide-external-link"
     }
   },
-  "ribbonIcons": {}
+  "ribbonIcons": {},
+  "fileRules": [],
+  "folderRules": []
 }

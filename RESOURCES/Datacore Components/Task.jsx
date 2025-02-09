@@ -55,7 +55,7 @@ const Checkbox = ({ page }) => {
             newIcon,
             null,
         );
-        iconic.refreshIconManagers();
+        iconic.fileIconManager.refreshIcons();
 
         const file = app.vault.getAbstractFileByPath(page.$path);
         const process = async () => {

@@ -7,7 +7,7 @@ iconic.saveFileIcon(
     'lucide-circle',
     null,
 );
-iconic.refreshIconManagers();
+iconic.fileIconManager.refreshIcons();
 
 tp.hooks.on_all_templates_executed(async () => {
     const file = tp.file.find_tfile(tp.file.path(true));
