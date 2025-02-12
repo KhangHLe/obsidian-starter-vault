@@ -1,4 +1,6 @@
-const { Row } = await dc.require('RESOURCES/Datacore Components/Row.jsx');
+const { Task } = await dc.require("RESOURCES/Datacore Components/Task.jsx");
+const { Event } = await dc.require("RESOURCES/Datacore Components/Event.jsx");
+const { nextRecurrence, today } = await dc.require("RESOURCES/Datacore Components/DateUtil.js");
 
 const handleGroup = (page) => {
     if (page.$tags.includes('#evening')) {
@@ -13,6 +15,13 @@ const Header = ({ group }) => {
 }
 
 const handlePages = (pages) => (pages
+    .where(page => {
+        if (page.$frontmatter?.repeats && page.$frontmatter?.start) {
+            return +nextRecurrence(page.$frontmatter?.start.value, page.$frontmatter?.repeats.value).startOf('day') == +today;
+        }
+
+        return true;
+    })
     .sort(page => page.$frontmatter?.start ? 1 : 2)
     .groupBy(handleGroup)
     .sort(group => group.key == 'Today' ? 1 : 2)
@@ -23,9 +32,9 @@ const Today = () => {
         AND !path(RESOURCES) 
         AND (
             (!closed AND (scheduled <= date(today) OR deadline = date(today))) 
+            OR striptime(start) = striptime(date(today))
             OR (
-                (!end AND striptime(start) = striptime(date(today))) 
-                OR (end AND striptime(start) <= date(today) AND end >= date(today))
+                repeats AND (start OR end)
             )
         )`);
     const pages = dc.useArray(query, handlePages);
@@ -33,13 +42,18 @@ const Today = () => {
     return pages.map(group => {
         const columns = [{
             id: <Header group={group} />,
-            value: (page) => <Row page={page} />,
+            value: (page) => {
+                if (page.$frontmatter?.start) {
+                    return <Event page={page} type='time' />;
+                } else {
+                    return <Task page={page} />;
+                }
+            },
         }];
 
-        return <>
+        return <dc.Stack>
             <dc.VanillaTable columns={columns} rows={group.rows} />
-            <br/>
-        </>;
+        </dc.Stack>;
     });
 };
 

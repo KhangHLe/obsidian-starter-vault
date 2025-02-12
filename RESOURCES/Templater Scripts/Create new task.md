@@ -1,13 +1,6 @@
 <%*
 const choices = ['Today', 'This Evening', 'Anytime', 'Scheduled', 'Someday'];
 const schedule = await tp.system.suggester(choices, choices);
-const iconic = app.plugins.getPlugin('iconic');
-iconic.saveFileIcon(
-    { id: tp.file.path(true) },
-    'lucide-circle',
-    null,
-);
-iconic.refreshIconManagers();
 
 tp.hooks.on_all_templates_executed(async () => {
     const file = tp.file.find_tfile(tp.file.path(true));

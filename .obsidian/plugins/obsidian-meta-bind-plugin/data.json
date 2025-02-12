@@ -1,0 +1,37 @@
+{
+  "devMode": false,
+  "ignoreCodeBlockRestrictions": false,
+  "preferredDateFormat": "YYYY-MM-DD",
+  "firstWeekday": {
+    "index": 1,
+    "name": "Monday",
+    "shortName": "Mo"
+  },
+  "syncInterval": 200,
+  "minSyncInterval": 50,
+  "maxSyncInterval": 1000,
+  "enableJs": false,
+  "viewFieldDisplayNullAsEmpty": false,
+  "enableSyntaxHighlighting": true,
+  "enableEditorRightClickMenu": true,
+  "inputFieldTemplates": [],
+  "buttonTemplates": [
+    {
+      "style": "primary",
+      "label": "Add Task",
+      "actions": [
+        {
+          "type": "templaterCreateNote",
+          "templateFile": "RESOURCES/Templater Scripts/Create new task.md",
+          "folderPath": "INBOX",
+          "fileName": "Untitled Task"
+        }
+      ],
+      "icon": "plus",
+      "id": "add-task"
+    }
+  ],
+  "excludedFolders": [
+    "templates"
+  ]
+}

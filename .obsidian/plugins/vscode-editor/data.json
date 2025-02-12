@@ -2,9 +2,6 @@
   "extensions": [
     "ts",
     "js",
-    "jsx",
-    "ts",
-    "tsx",
     "py",
     "css",
     "c",
@@ -13,7 +10,9 @@
     "rs",
     "java",
     "lua",
-    "php"
+    "php",
+    "jsx",
+    "tsx"
   ],
   "folding": true,
   "lineNumbers": true,
@@ -22,5 +21,5 @@
   "semanticValidation": true,
   "syntaxValidation": true,
   "themeColor": "AUTO",
-  "fontSize": 16
+  "fontSize": 15
 }

@@ -1,8 +1,21 @@
-const { Row } = await dc.require('RESOURCES/Datacore Components/Row.jsx');
+const { Task } = await dc.require("RESOURCES/Datacore Components/Task.jsx");
+const { Event } = await dc.require("RESOURCES/Datacore Components/Event.jsx");
+
+const today = dc.luxon.DateTime.now().startOf('day');
 
 const handleGroup = (page) => {
     if (page.$frontmatter?.closed) {
-        return page.$frontmatter?.closed?.value.startOf('day');
+        if (+page.$frontmatter?.closed?.value.startOf('day') == +today || +page.$frontmatter?.closed?.value.startOf('day') == +today.plus({ days: -1 })) {
+            return page.$frontmatter?.closed?.value.startOf('day');
+        }
+        return page.$frontmatter?.closed?.value.startOf('month');
+    }
+    if (page.$frontmatter?.start) {
+        const eventDate = page.$frontmatter?.end ?? page.$frontmatter?.start;
+        if (eventDate?.value.startOf('day') == +today || eventDate?.value.startOf('day') == +today.plus({ days: -1 })) {
+            return eventDate?.value?.startOf('day');
+        }
+        return eventDate?.value?.startOf('month');
     }
     return page.$frontmatter?.end?.value.startOf('day') ?? page.$frontmatter?.start?.value.startOf('day');
 };
@@ -15,35 +28,36 @@ const handlePages = (pages) => (pages
 );
 
 const Header = ({ group }) => {
-    const today = dc.luxon.DateTime.now().startOf('day');
     const date = group.key;
-    let day = date?.toFormat('EEEE');
-    
-    if (+date == +today) day = 'Today';
-    else if (+date == +today.plus({ days: -1 })) day = 'Yesterday';
 
-    return <>
-        {date.toFormat('MMMM d')}
-        <small style={{ color: 'grey' }}> {day}</small>
-    </>;
+    if (+date == +today) return 'Today';
+    else if (+date == +today.plus({ days: -1 })) return 'Yesterday';
+
+    return date.toFormat('MMMM');
 };
 
 const Logbook = () => {
     const query = dc.useQuery(`@page 
         AND !path(RESOURCES) 
-        AND (closed OR (
-            (end AND end < date(today)) 
-            OR (start < date(today))
-        ))`);
+        AND !repeats 
+        AND (closed OR start < date(today))`);
     const groups = dc.useArray(query, handlePages);
 
     return groups.map(group => {
-        const columns = [{ id: <Header group={group} />, value: (page) => <Row page={page} /> }];
+        const columns = [{
+            id: <Header group={group} />,
+            value: (page) => {
+                if (page.$frontmatter?.start) {
+                    return <Event page={page} type='date' />;
+                } else {
+                    return <Task page={page} />;
+                }
+            },
+        }];
 
-        return <>
+        return <dc.Stack>
             <dc.VanillaTable columns={columns} rows={group.rows} />
-            <br/>
-        </>;
+        </dc.Stack>;
     });
 };
 

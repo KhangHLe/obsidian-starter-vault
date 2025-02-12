@@ -74,7 +74,26 @@
       "key": "R"
     }
   ],
+  "file-explorer:new-file": [],
+  "workspace:new-tab": [],
   "quickadd:choice:51c875dc-2c5d-4f2b-8a17-f79ef1548ed1": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "N"
+    }
+  ],
+  "templater-obsidian:insert-RESOURCES/Templater Scripts/Toggle Todo.md": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": " "
+    }
+  ],
+  "templater-obsidian:create-RESOURCES/Templater Scripts/Create new task.md": [
     {
       "modifiers": [
         "Alt",

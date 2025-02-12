@@ -1,4 +1,7 @@
 const { Link } = await dc.require('RESOURCES/Datacore Components/Link.jsx');
+const { Folder } = await dc.require("RESOURCES/Datacore Components/Folder.jsx");
+const { nextRecurrence } = await dc.require("RESOURCES/Datacore Components/DateUtil.js");
+
 const today = dc.luxon.DateTime.now().startOf('day');
 
 const Deadline = ({ deadline }) => {
@@ -17,20 +20,8 @@ const Deadline = ({ deadline }) => {
         days = `${Math.abs(diff)} days ago`;
     }
     
-    return <small style={{ color: diff <= 1 ? 'darkred' : '', float: 'right' }}>
+    return <small style={{ color: diff <= 1 && 'var(--text-error)', float: 'right' }}>
         <dc.Icon icon="flag" className="icon" /> {days}
-    </small>;
-}
-
-const Folder = ({ path }) => {
-    const split = path.split('/');
-    if (split[0] == 'INBOX') {
-        return <small style={{ color: 'grey', paddingLeft: '22px' }}>
-            <dc.Icon icon='inbox' className="icon" /> Inbox
-        </small>
-    }
-    return <small style={{ color: 'grey', paddingLeft: '20px' }}>
-        {split[1]}
     </small>;
 }
 
@@ -45,49 +36,17 @@ const Checkbox = ({ page }) => {
     if (!icon) return;
 
     const handleClick = dc.useCallback(() => {
-        const iconic = app.plugins.getPlugin('iconic');
-        let newIcon = 'lucide-circle';
-        if (!page.$frontmatter?.closed && !page.$frontmatter?.recurrence) {
-            newIcon = 'lucide-check-circle';
-        }
-        iconic.saveFileIcon(
-            { id: page.$path },
-            newIcon,
-            null,
-        );
-        iconic.refreshIconManagers();
-
         const file = app.vault.getAbstractFileByPath(page.$path);
         const process = async () => {
             await app.fileManager.processFrontMatter(file, (frontmatter) => {
-                if (frontmatter['recurrence']) {
-                    const units = {
-                        year: 0,
-                        month: 0,
-                        week: 0,
-                        day: 0
-                    };
-
-                    const regex = /(\d+)\s*(year|month|week|day)s?/g;
-                    let match;
-
-                    while ((match = regex.exec(frontmatter['recurrence'])) !== null) {
-                        const [, value, unit] = match;
-                        units[unit] = parseInt(value, 10);
-                    }
-
-                    const duration = dc.luxon.Duration.fromObject({
-                        years: units.year,
-                        months: units.month,
-                        weeks: units.week,
-                        days: units.day,
+                if (frontmatter['repeats']) {
+                    ['scheduled', 'deadline'].forEach(propName => {
+                        if (frontmatter[propName]) {
+                            frontmatter[propName] = nextRecurrence(frontmatter[propName], frontmatter['repeats']).toFormat('y-MM-dd');
+                        }
                     });
-                    
-                    if (frontmatter['scheduled']) {
-                        frontmatter['scheduled'] = dc.luxon.DateTime.fromISO(frontmatter['scheduled']).plus(duration).toFormat('y-MM-dd');
-                    }
-                    if (frontmatter['deadline']) {
-                        frontmatter['deadline'] = dc.luxon.DateTime.fromISO(frontmatter['deadline']).plus(duration).toFormat('y-MM-dd');
+                    if (frontmatter['remind on']) {
+                        frontmatter['remind on'] = nextRecurrence(frontmatter['remind on'], frontmatter['repeats']).toFormat("y-MM-dd'T'T");
                     }
                 } else if (frontmatter['closed']) {
                     delete frontmatter['closed'];
@@ -111,8 +70,11 @@ const Checkbox = ({ page }) => {
         process();
     }, [page]);
 
-    return <a onClick={handleClick}>
+    return <a onClick={handleClick} style={{ marginRight: '8px' }}>
         <dc.Icon icon={icon} className="icon-in-link" />
+        {page.$frontmatter?.closed && (
+            page.$frontmatter?.closed?.value.toFormat('MMM d')
+        )}
     </a>;
 }
 
@@ -123,15 +85,22 @@ const Task = ({ page }) => {
         deadline = page.$frontmatter?.deadline;
     }
 
-    return <>
-        <Checkbox page={page} />
-        <Link path={page.$path}>
-            {page.$name}
-        </Link>
-        {deadline && <Deadline deadline={deadline} />}
-        <br/>
-        <Folder path={page.$path} />
-    </>;
+    return <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center'  }}>
+        <div>
+            <Checkbox page={page} />
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <Link path={page.$path}>
+                {page.$name}
+            </Link>
+            <Folder path={page.$path} />
+        </div>
+        {deadline && (
+            <div style={{ marginLeft: 'auto' }}>
+                <Deadline deadline={deadline} />
+            </div>
+        )}
+    </div>;
 };
 
 

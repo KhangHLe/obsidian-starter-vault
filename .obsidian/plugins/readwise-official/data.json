@@ -1,0 +1,15 @@
+{
+  "token": "",
+  "readwiseDir": "INBOX",
+  "frequency": "1440",
+  "triggerOnLoad": true,
+  "isSyncing": false,
+  "lastSyncFailed": false,
+  "lastSavedStatusID": 0,
+  "currentSyncStatusID": 0,
+  "refreshBooks": false,
+  "booksToRefresh": [],
+  "failedBooks": [],
+  "booksIDsMap": {},
+  "reimportShowConfirmation": true
+}

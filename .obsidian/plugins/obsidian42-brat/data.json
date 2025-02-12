@@ -1,5 +1,6 @@
 {
   "pluginList": [
+    "Mara-Li/obsidian-bartender",
     "blacksmithgu/datacore"
   ],
   "pluginSubListFrozenVersion": [],

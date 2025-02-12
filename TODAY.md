@@ -3,3 +3,5 @@
 const { Today } = await dc.require("RESOURCES/Datacore Components/Today.jsx");
 return <Today />;
 ```
+
+`BUTTON[add-task]`

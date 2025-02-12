@@ -14,11 +14,20 @@
       "template": ""
     }
   ],
+  "enable_file_templates": false,
+  "file_templates": [
+    {
+      "regex": ".*",
+      "template": ""
+    }
+  ],
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
     "RESOURCES/Templater Scripts/Toggle Todo.md",
-    "RESOURCES/Templater Scripts/Reschedule.md"
+    "RESOURCES/Templater Scripts/Reschedule.md",
+    "RESOURCES/Templater Scripts/Create new task.md",
+    "RESOURCES/Templater Scripts/Create new event.md"
   ],
   "startup_templates": [
     ""

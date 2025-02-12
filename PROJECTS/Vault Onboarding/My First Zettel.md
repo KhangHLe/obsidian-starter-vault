@@ -1,5 +1,5 @@
 ---
-folgezettel: "1.1"
+folgezettel: 1.1a
 ---
 To create a Zettel, simply add the `folgezettel` property like above and add the alphanumeric ID. The zettel will then show up in the ZETTELKASTEN note sorted and searchable.
 

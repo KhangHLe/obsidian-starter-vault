@@ -12,7 +12,6 @@
   "promptDelete": false,
   "spellcheck": false,
   "readableLineLength": true,
-  "showRibbon": true,
   "autoConvertHtml": true,
   "foldHeading": false,
   "foldIndent": false

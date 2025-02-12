@@ -1,14 +1,15 @@
 {
-  "accentColor": "#4c8ce6",
-  "cssTheme": "",
-  "theme": "moonstone",
+  "accentColor": "#4c79cd",
+  "cssTheme": "Border",
+  "theme": "obsidian",
   "translucency": true,
   "enabledCssSnippets": [
-    "supercharged-links-gen",
     "show-hover-title",
     "datacore-classes",
     "file-explorer-wrap",
-    "files-divider"
+    "files-divider",
+    "hide-bartender-buttons"
   ],
-  "showViewHeader": true
+  "showViewHeader": true,
+  "showRibbon": true
 }

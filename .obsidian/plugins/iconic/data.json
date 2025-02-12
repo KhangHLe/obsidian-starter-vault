@@ -2,7 +2,7 @@
   "biggerIcons": "on",
   "clickableIcons": "off",
   "showAllFileIcons": false,
-  "showAllFolderIcons": false,
+  "showAllFolderIcons": true,
   "minimalFolderIcons": true,
   "showItemName": "on",
   "biggerSearchResults": "on",
@@ -12,7 +12,13 @@
   "uncolorHover": false,
   "uncolorDrag": false,
   "uncolorSelect": false,
+  "uncolorQuick": false,
   "rememberDeletedItems": false,
+  "dialogState": {
+    "iconMode": true,
+    "emojiMode": false,
+    "rulePage": "file"
+  },
   "appIcons": {},
   "tabIcons": {},
   "fileIcons": {
@@ -20,118 +26,55 @@
       "icon": "lucide-layers-3"
     },
     "ARCHIVES": {
-      "icon": "lucide-archive",
-      "unsynced": [
-        "acb549b207c48d04"
-      ]
+      "icon": "lucide-archive"
     },
     "AREAS": {
-      "icon": "lucide-land-plot",
-      "unsynced": [
-        "acb549b207c48d04"
-      ]
+      "icon": "lucide-land-plot"
     },
     "AREAS/Car": {
-      "icon": "lucide-car",
-      "unsynced": [
-        "acb549b207c48d04"
-      ]
+      "icon": "lucide-car"
     },
     "AREAS/Career": {
-      "icon": "lucide-network",
-      "unsynced": [
-        "acb549b207c48d04"
-      ]
+      "icon": "lucide-network"
     },
     "AREAS/Finance": {
-      "icon": "lucide-wallet",
-      "unsynced": [
-        "acb549b207c48d04"
-      ]
+      "icon": "lucide-wallet-2"
     },
     "AREAS/Health": {
-      "icon": "lucide-cross",
-      "unsynced": [
-        "acb549b207c48d04"
-      ]
+      "icon": "lucide-cross"
     },
     "AREAS/Home": {
-      "icon": "lucide-home",
-      "unsynced": [
-        "acb549b207c48d04"
-      ]
+      "icon": "lucide-home"
     },
     "AREAS/Personal Development": {
-      "icon": "lucide-book-heart",
-      "unsynced": [
-        "acb549b207c48d04"
-      ]
+      "icon": "lucide-book-heart"
     },
     "AREAS/Relationships": {
-      "icon": "lucide-heart-handshake",
-      "unsynced": [
-        "acb549b207c48d04"
-      ]
+      "icon": "lucide-handshake"
     },
     "AREAS/Work": {
-      "icon": "lucide-briefcase",
-      "unsynced": [
-        "acb549b207c48d04"
-      ]
+      "icon": "lucide-briefcase-business"
     },
     "INBOX": {
-      "icon": "lucide-inbox",
-      "unsynced": [
-        "acb549b207c48d04"
-      ]
+      "icon": "lucide-inbox"
     },
     "LOGBOOK.md": {
       "icon": "lucide-book-check"
     },
     "PROJECTS": {
-      "icon": "lucide-check-square",
-      "unsynced": [
-        "acb549b207c48d04"
-      ]
+      "icon": "lucide-check-square"
     },
     "PROJECTS/Vault Onboarding": {
-      "icon": "open-vault",
-      "unsynced": [
-        "acb549b207c48d04"
-      ]
-    },
-    "PROJECTS/Vault Onboarding/(Optional) Learn the BASB Method.md": {
-      "icon": "lucide-circle"
-    },
-    "PROJECTS/Vault Onboarding/(Optional) Learn the Zettelkasten Method.md": {
-      "icon": "lucide-circle"
-    },
-    "PROJECTS/Vault Onboarding/Learn Capturing.md": {
-      "icon": "lucide-circle"
-    },
-    "PROJECTS/Vault Onboarding/Learn Task Management.md": {
-      "icon": "lucide-circle"
-    },
-    "PROJECTS/Vault Onboarding/Sorting the files explorer.md": {
-      "icon": "lucide-circle"
+      "icon": "open-vault"
     },
     "RESOURCES": {
-      "icon": "lucide-library-big",
-      "unsynced": [
-        "acb549b207c48d04"
-      ]
+      "icon": "lucide-library-big"
     },
     "RESOURCES/Datacore Components": {
-      "icon": "lucide-component",
-      "unsynced": [
-        "acb549b207c48d04"
-      ]
+      "icon": "lucide-component"
     },
     "RESOURCES/Templater Scripts": {
-      "icon": "lucide-file-code-2",
-      "unsynced": [
-        "acb549b207c48d04"
-      ]
+      "icon": "lucide-file-code-2"
     },
     "SOMEDAY.md": {
       "icon": "lucide-archive"
@@ -143,7 +86,7 @@
       "icon": "lucide-calendar-days"
     },
     "ZETTELKASTEN.md": {
-      "icon": "lucide-inbox"
+      "icon": "lucide-waypoints"
     }
   },
   "bookmarkIcons": {
@@ -151,6 +94,7 @@
       "icon": "lucide-list-ordered"
     }
   },
+  "tagIcons": {},
   "propertyIcons": {
     "author": {
       "icon": "lucide-pen-line"
@@ -168,10 +112,19 @@
       "icon": "lucide-calendar-clock"
     },
     "folgezettel": {
-      "icon": "lucide-inbox"
+      "icon": "lucide-waypoints"
+    },
+    "meeting url": {
+      "icon": "lucide-video"
     },
     "recurrence": {
       "icon": "lucide-repeat"
+    },
+    "remind at": {
+      "icon": "lucide-bell-ring"
+    },
+    "repeats": {
+      "icon": "lucide-repeat-2"
     },
     "start": {
       "icon": "lucide-calendar-clock"
@@ -180,5 +133,70 @@
       "icon": "lucide-external-link"
     }
   },
-  "ribbonIcons": {}
+  "ribbonIcons": {},
+  "fileRules": [
+    {
+      "id": "837iK",
+      "name": "Open Task",
+      "match": "any",
+      "conditions": [
+        {
+          "source": "tags",
+          "operator": "includes",
+          "value": "anytime"
+        },
+        {
+          "source": "tags",
+          "operator": "includes",
+          "value": "someday"
+        },
+        {
+          "source": "property:scheduled",
+          "operator": "hasProperty"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-circle"
+    },
+    {
+      "id": "UJXle",
+      "name": "Closed Task",
+      "match": "any",
+      "conditions": [
+        {
+          "source": "property:closed",
+          "operator": "hasProperty"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-check-circle"
+    },
+    {
+      "id": "GLiNr",
+      "name": "Event",
+      "match": "any",
+      "conditions": [
+        {
+          "source": "property:start",
+          "operator": "hasProperty"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-calendar-days"
+    },
+    {
+      "id": "tuGlP",
+      "name": "Zettel",
+      "match": "any",
+      "conditions": [
+        {
+          "source": "property:folgezettel",
+          "operator": "hasProperty"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-waypoints"
+    }
+  ],
+  "folderRules": []
 }
