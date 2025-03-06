@@ -24,11 +24,33 @@
           "type": "templaterCreateNote",
           "templateFile": "RESOURCES/Templater Scripts/Create new task.md",
           "folderPath": "INBOX",
-          "fileName": "Untitled Task"
+          "fileName": "Untitled Task",
+          "openNote": true
         }
       ],
       "icon": "plus",
       "id": "add-task"
+    },
+    {
+      "label": "Add Zettel",
+      "icon": "plus",
+      "style": "primary",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "",
+      "id": "add-zettel",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "templaterCreateNote",
+          "templateFile": "RESOURCES/Templater/Create new zettel.md",
+          "folderPath": "INBOX",
+          "fileName": "Untitled Zettel",
+          "openNote": true,
+          "openIfAlreadyExists": false
+        }
+      ]
     }
   ],
   "excludedFolders": [

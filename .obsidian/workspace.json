@@ -4,13 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "af4cb4aa263aa1ed",
+        "id": "edfa89a9b0ec6618",
         "type": "tabs",
         "children": [
           {
-            "id": "11886e7c3e78952c",
+            "id": "c28b03d6a5f34dbb",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -28,7 +27,6 @@
                   "unlinkedCollapsed": true
                 }
               },
-              "pinned": true,
               "icon": "lucide-file",
               "title": "TODAY"
             }
@@ -78,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "[\"repeats\"]",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -124,9 +122,8 @@
     "type": "split",
     "children": [
       {
-        "id": "b1703c7993e3ba41",
+        "id": "d3f326d9bf2f96a5",
         "type": "tabs",
-        "dimension": 41.44736842105263,
         "children": [
           {
             "id": "3d21b87f84807c09",
@@ -137,31 +134,12 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
-          },
-          {
-            "id": "3e15176fcbf3c0b7",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks"
-            }
           }
         ]
       },
       {
         "id": "63de8f12f7a55d27",
         "type": "tabs",
-        "dimension": 58.55263157894737,
         "children": [
           {
             "id": "0acff5af60eff18b",
@@ -169,7 +147,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "PROJECTS/Vault Onboarding/(Optional) Learn the BASB Method.md",
+                "file": "TODAY.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -197,7 +175,26 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of (Optional) Learn the BASB Method"
+              "title": "Graph of TODAY"
+            }
+          },
+          {
+            "id": "6c97fcb7da01636a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "TODAY.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for TODAY"
             }
           }
         ]
@@ -209,7 +206,9 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "homepage:Open homepage": true,
+      "cmdr:Create new task": false,
+      "cmdr:Create new event": false,
+      "cmdr:Create new zettel": false,
       "daily-notes:Open today's daily note": false,
       "canvas:Create new canvas": false,
       "switcher:Open quick switcher": true,
@@ -221,46 +220,46 @@
       "iconic:Open rulebook": true
     }
   },
-  "active": "11886e7c3e78952c",
+  "active": "c28b03d6a5f34dbb",
   "lastOpenFiles": [
-    "PROJECTS/Vault Onboarding/Add Task Button.png",
     "PROJECTS/Vault Onboarding/(Optional) Learn the Zettelkasten Method.md",
     "TODAY.md",
+    "LOGBOOK.md",
+    "ANYTIME.md",
+    "UPCOMING.md",
+    "ZETTELKASTEN.md",
+    "SOMEDAY.md",
+    "RESOURCES/Datacore/Event.jsx",
+    "PROJECTS/Vault Onboarding/Learn Capturing.md",
+    "RESOURCES/Datacore/Anytime.jsx",
+    "RESOURCES/Datacore/DateUtil.js",
+    "RESOURCES/Datacore/Zettelkasten.jsx",
     "PROJECTS/Vault Onboarding/Learn Task Management.md",
-    "RESOURCES/Datacore Components/DateUtil.js",
-    "RESOURCES/Datacore Components/Zettelkasten.jsx",
-    "RESOURCES/Datacore Components/Today.jsx",
-    "PROJECTS/Vault Onboarding/Meeting Event Example.md",
+    "RESOURCES/Datacore/Task.jsx",
+    "RESOURCES/Datacore/Folder.jsx",
+    "RESOURCES/Datacore/Someday.jsx",
+    "RESOURCES/Datacore/Logbook.jsx",
     "PROJECTS/Vault Onboarding/My First Zettel.md",
     "PROJECTS/Vault Onboarding/(Optional) Learn the BASB Method.md",
-    "PROJECTS/Vault Onboarding/Learn Capturing.md",
-    "SOMEDAY.md",
-    "UPCOMING.md",
-    "LOGBOOK.md",
-    "PROJECTS/Vault Onboarding/Vault Onboarding.md",
-    "ZETTELKASTEN.md",
-    "ANYTIME.md",
+    "RESOURCES/Datacore/Link.jsx",
+    "AREAS/Work/Lorem Ipsum Standup.md",
     "PROJECTS/Vault Onboarding/Combine Zettelkasten and BASB.html",
+    "PROJECTS/Vault Onboarding/Add Task Button.png",
+    "RESOURCES/Daily Notes/2025-01-16.md",
+    "PROJECTS/Vault Onboarding/Meeting Event Example.md",
+    "RESOURCES/Daily Notes/2025-02-28.md",
+    "RESOURCES/Templater/Mark as done.md",
+    "RESOURCES/Templater/Toggle Todo.md",
+    "RESOURCES/Templater/Reschedule.md",
+    "RESOURCES/Templater/Create new zettel.md",
+    "RESOURCES/Templater/Create new task.md",
+    "INBOX/Test Zettel 2.md",
+    "INBOX/Test Zettel.md",
+    "RESOURCES/Templater/Create new event.md",
+    "ARCHIVES/Test/Test.md",
+    "INBOX/Test Rename.md",
     "PROJECTS/Vault Onboarding/Create new task button.png",
-    "RESOURCES/Datacore Components/Folder.jsx",
-    "PROJECTS/Vault Onboarding/Sorting the files explorer.md",
-    "RESOURCES/Datacore Components/Event.jsx",
-    "RESOURCES/Datacore Components/Link.jsx",
     "PROJECTS/Vault Onboarding/Reschedule button.png",
-    "RESOURCES/Datacore Components/Task.jsx",
-    "PROJECTS/Vault Onboarding/You can view this Word Doc.docx",
-    "PROJECTS/Vault Onboarding/You can edit this code.jsx",
-    "RESOURCES/Templater Scripts/Create new task.md",
-    "RESOURCES/Templater Scripts/Create new event.md",
-    "RESOURCES/Templater Scripts/Reschedule.md",
-    "ARCHIVES/R&R—Opt-In SignalR Issue/Fix SignalR Issue.md",
-    "INBOX/Test Reminder.md",
-    "AREAS/Home/Replace AC Filter.md",
-    "AREAS/Home/Trash (with Recycling).md",
-    "AREAS/Software Development/Prefer splice over delete keyword for Arrays.md",
-    "PROJECTS/Learn Godot 4/Atomic Notes should start top-down.md",
-    "AREAS/Personal Development/3 Steps Formula For Speaking.md",
-    "AREAS/Personal Development/33 Minutes Of Communication Skills Advice I Wish I Knew In My 20s.md",
     "AREAS/Health/2024 Cigna Health Insurance ID.png",
     "AREAS/R&R/Access Codes.png",
     "ARCHIVES/R&R—Dealership Library/Attached To VIN Icon.png",
@@ -268,7 +267,6 @@
     "ARCHIVES/R&R—Android Video Library/Mobile Media Library.png",
     "ARCHIVES/R&R—Video Library Tools/Video Library Dialog.png",
     "ARCHIVES/R&R—Video Library Tools/Video Library Filter Part 1.png",
-    "ARCHIVES/R&R—Video Library Tools/Video Library Tool Screen.png",
     "WORKBENCH.canvas",
     "PROJECTS/R&R—Android Video Library/Media Library Wireframing.canvas",
     "ARCHIVES/R&R—Block Landlines/Opt-In Flow.canvas",

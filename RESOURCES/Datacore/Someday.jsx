@@ -1,4 +1,4 @@
-const { Task } = await dc.require('RESOURCES/Datacore Components/Task.jsx');
+const { Task } = await dc.require('RESOURCES/Datacore/Task.jsx');
 
 const Someday = () => {
     const pages = dc.useQuery('@page AND !path(RESOURCES/Templates) AND !closed AND #someday');

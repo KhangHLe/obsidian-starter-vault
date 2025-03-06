@@ -1,0 +1,61 @@
+{
+  "confirmDeletion": false,
+  "showAddCommand": false,
+  "debug": false,
+  "editorMenu": [],
+  "fileMenu": [
+    {
+      "id": "templater-obsidian:RESOURCES/Templater/Reschedule.md",
+      "icon": "lucide-check-circle",
+      "name": "Schedule Task",
+      "mode": "any"
+    },
+    {
+      "id": "templater-obsidian:RESOURCES/Templater/Mark as done.md",
+      "icon": "lucide-check",
+      "name": "Mark as done",
+      "mode": "any"
+    }
+  ],
+  "leftRibbon": [
+    {
+      "id": "templater-obsidian:create-RESOURCES/Templater/Create new task.md",
+      "icon": "lucide-check-circle",
+      "name": "Create new task",
+      "mode": "any"
+    },
+    {
+      "id": "templater-obsidian:create-RESOURCES/Templater/Create new event.md",
+      "icon": "lucide-calendar-days",
+      "name": "Create new event",
+      "mode": "any"
+    },
+    {
+      "id": "templater-obsidian:create-RESOURCES/Templater/Create new zettel.md",
+      "icon": "lucide-waypoints",
+      "name": "Create new zettel",
+      "mode": "any"
+    }
+  ],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [],
+  "macros": [],
+  "explorer": [],
+  "hide": {
+    "statusbar": [],
+    "leftRibbon": []
+  },
+  "spacing": 8,
+  "advancedToolbar": {
+    "rowHeight": 48,
+    "rowCount": 1,
+    "spacing": 0,
+    "buttonWidth": 48,
+    "columnLayout": false,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 0
+  }
+}

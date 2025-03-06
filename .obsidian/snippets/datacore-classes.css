@@ -25,3 +25,29 @@
         stroke-linejoin: round;
     }
 }
+
+.task-icon {
+    transform: translateY(10%);
+    margin-right: var(--size-2-2);
+    display: inline-flex;
+    color: var(--text-muted);
+
+    svg {
+        width: 20px;
+        height: 20px;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+
+        &:hover {
+            fill: var(--text-selection);
+        }
+    }
+}
+
+.datacore-table > tbody > tr:hover {
+    border-radius: 6px;
+    background-color: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}

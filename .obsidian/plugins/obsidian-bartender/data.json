@@ -38,11 +38,11 @@
     "RESOURCES": [
       "RESOURCES/Algorithms",
       "RESOURCES/Daily Notes 2024",
-      "RESOURCES/Datacore Components",
+      "RESOURCES/Datacore",
       "RESOURCES/Design Themes",
       "RESOURCES/Holidays",
       "RESOURCES/Mass Effect",
-      "RESOURCES/Templater Scripts"
+      "RESOURCES/Templater"
     ],
     "AREAS/R&R—FOCUS-Mobile": [
       "AREAS/R&R—FOCUS-Mobile/Fix Message Conversation Slowness.md",
@@ -127,7 +127,7 @@
     ]
   },
   "actionBarOrder": {},
-  "autoHide": false,
+  "autoHide": true,
   "autoHideDelay": 2000,
   "dragDelay": 200,
   "sortOrder": "custom",

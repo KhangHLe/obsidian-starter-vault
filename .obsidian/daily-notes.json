@@ -1,4 +1,4 @@
 {
-  "folder": "RESOURCES",
-  "format": "[Daily Notes ]YYYY/YYYY-MM-DD"
+  "folder": "RESOURCES/Daily Notes",
+  "format": "YYYY-MM-DD"
 }

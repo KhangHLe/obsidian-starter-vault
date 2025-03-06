@@ -1,5 +1,5 @@
-const { Task } = await dc.require("RESOURCES/Datacore Components/Task.jsx");
-const { Event } = await dc.require("RESOURCES/Datacore Components/Event.jsx");
+const { Task } = await dc.require("RESOURCES/Datacore/Task.jsx");
+const { Event } = await dc.require("RESOURCES/Datacore/Event.jsx");
 
 const today = dc.luxon.DateTime.now().startOf('day');
 

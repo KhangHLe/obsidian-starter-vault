@@ -1,7 +1,7 @@
 {
-  "accentColor": "#4c79cd",
-  "cssTheme": "Border",
-  "theme": "obsidian",
+  "accentColor": "#4c8ce6",
+  "cssTheme": "",
+  "theme": "moonstone",
   "translucency": true,
   "enabledCssSnippets": [
     "show-hover-title",

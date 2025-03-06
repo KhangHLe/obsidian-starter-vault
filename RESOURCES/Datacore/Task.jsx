@@ -1,6 +1,5 @@
-const { Link } = await dc.require('RESOURCES/Datacore Components/Link.jsx');
-const { Folder } = await dc.require("RESOURCES/Datacore Components/Folder.jsx");
-const { nextRecurrence } = await dc.require("RESOURCES/Datacore Components/DateUtil.js");
+const { Link } = await dc.require('RESOURCES/Datacore/Link.jsx');
+const { nextRecurrence } = await dc.require("RESOURCES/Datacore/DateUtil.js");
 
 const today = dc.luxon.DateTime.now().startOf('day');
 
@@ -20,7 +19,7 @@ const Deadline = ({ deadline }) => {
         days = `${Math.abs(diff)} days ago`;
     }
     
-    return <small style={{ color: diff <= 1 && 'var(--text-error)', float: 'right' }}>
+    return <small style={{ color: diff <= 1 ? 'var(--text-error)' : 'var(--text-muted)', float: 'right' }}>
         <dc.Icon icon="flag" className="icon" /> {days}
     </small>;
 }
@@ -71,7 +70,7 @@ const Checkbox = ({ page }) => {
     }, [page]);
 
     return <a onClick={handleClick} style={{ marginRight: '8px' }}>
-        <dc.Icon icon={icon} className="icon-in-link" />
+        <dc.Icon icon={icon} className="task-icon" />
         {page.$frontmatter?.closed && (
             page.$frontmatter?.closed?.value.toFormat('MMM d')
         )}
@@ -79,28 +78,23 @@ const Checkbox = ({ page }) => {
 }
 
 const Task = ({ page }) => {
-    let deadline;
-
-    if (!page.$frontmatter?.closed) {
-        deadline = page.$frontmatter?.deadline;
-    }
-
-    return <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center'  }}>
-        <div>
+    return (
+        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
             <Checkbox page={page} />
-        </div>
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <Link path={page.$path}>
-                {page.$name}
+            <Link path={page.$path}
+                style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', width: '100%' }}>
+                <div style={{ display: 'flex', flexDirection: 'column'}}>
+                    <span>{page.$name}</span>
+                    <small style={{ color: 'var(--text-muted)' }}>{page.$path.split('/').at(-2)}</small>
+                </div>
+                {(!page.$frontmatter?.closed && page.$frontmatter?.deadline) && (
+                    <div style={{ marginLeft: 'auto' }}>
+                        <Deadline deadline={page.$frontmatter?.deadline} />
+                    </div>
+                )}
             </Link>
-            <Folder path={page.$path} />
         </div>
-        {deadline && (
-            <div style={{ marginLeft: 'auto' }}>
-                <Deadline deadline={deadline} />
-            </div>
-        )}
-    </div>;
+    );
 };
 
 

@@ -70,10 +70,13 @@
     "RESOURCES": {
       "icon": "lucide-library-big"
     },
-    "RESOURCES/Datacore Components": {
+    "RESOURCES/Daily Notes": {
+      "icon": "lucide-calendar"
+    },
+    "RESOURCES/Datacore": {
       "icon": "lucide-component"
     },
-    "RESOURCES/Templater Scripts": {
+    "RESOURCES/Templater": {
       "icon": "lucide-file-code-2"
     },
     "SOMEDAY.md": {
@@ -116,6 +119,9 @@
     },
     "meeting url": {
       "icon": "lucide-video"
+    },
+    "participants": {
+      "icon": "lucide-users"
     },
     "recurrence": {
       "icon": "lucide-repeat"

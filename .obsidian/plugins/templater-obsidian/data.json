@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "RESOURCES/Templater Scripts",
+  "templates_folder": "RESOURCES/Templater",
   "templates_pairs": [],
   "trigger_on_file_creation": false,
   "auto_jump_to_cursor": false,
@@ -24,10 +24,12 @@
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
-    "RESOURCES/Templater Scripts/Toggle Todo.md",
-    "RESOURCES/Templater Scripts/Reschedule.md",
-    "RESOURCES/Templater Scripts/Create new task.md",
-    "RESOURCES/Templater Scripts/Create new event.md"
+    "RESOURCES/Templater/Toggle Todo.md",
+    "RESOURCES/Templater/Reschedule.md",
+    "RESOURCES/Templater/Create new task.md",
+    "RESOURCES/Templater/Create new event.md",
+    "RESOURCES/Templater/Create new zettel.md",
+    "RESOURCES/Templater/Mark as done.md"
   ],
   "startup_templates": [
     ""

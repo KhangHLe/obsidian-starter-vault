@@ -1,6 +1,6 @@
-const { Task } = await dc.require("RESOURCES/Datacore Components/Task.jsx");
-const { Event } = await dc.require("RESOURCES/Datacore Components/Event.jsx");
-const { nextRecurrence, today } = await dc.require("RESOURCES/Datacore Components/DateUtil.js");
+const { Task } = await dc.require("RESOURCES/Datacore/Task.jsx");
+const { Event } = await dc.require("RESOURCES/Datacore/Event.jsx");
+const { nextRecurrence, today } = await dc.require("RESOURCES/Datacore/DateUtil.js");
 
 const handleGroup = (page) => {
     if (page.$tags.includes('#evening')) {

@@ -11,8 +11,8 @@
   "readwise-official",
   "templater-obsidian",
   "vscode-editor",
-  "obsidian-style-settings",
-  "homepage",
   "calendar",
-  "obsidian-meta-bind-plugin"
+  "obsidian-meta-bind-plugin",
+  "cmdr",
+  "better-search-views"
 ]

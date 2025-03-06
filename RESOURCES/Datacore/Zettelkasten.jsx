@@ -1,5 +1,4 @@
-const { Link } = await dc.require("RESOURCES/Datacore Components/Link.jsx");
-const { Folder } = await dc.require("RESOURCES/Datacore Components/Folder.jsx");
+const { Link } = await dc.require("RESOURCES/Datacore/Link.jsx");
 
 const Filter = ({ value, onChange }) => {
     return <div class="search-row"> 
@@ -16,7 +15,8 @@ const Zettelkasten = () => {
         .where(page => {
             if (filter == '') return true;
             return page.$name.toLowerCase().includes(filter.toLowerCase()) ||
-                page.$frontmatter.folgezettel.value.toLowerCase().includes(filter.toLowerCase());
+                page.$frontmatter.folgezettel.value.toLowerCase().includes(filter.toLowerCase()) ||
+                filter.toLowerCase().startsWith(page.$frontmatter.folgezettel.value);
         })
         .sort(page => [page.$frontmatter.folgezettel], 'asc')
     ), [filter]);
@@ -24,16 +24,14 @@ const Zettelkasten = () => {
     const columns = [{
         id: '',
         value: (page) => (
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <div>
-                    <Link path={page.$path}>
-                        {page.$name}
-                    </Link>
-                    <small style={{ float: "right", color: 'var(--text-muted)' }}>
-                        <dc.Icon icon='waypoints' className="icon" /> {page.$frontmatter?.folgezettel.value}
-                    </small>
-                </div>
-                <Folder path={page.$path} noPadding />
+            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                <Link path={page.$path} style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+                    {page.$name}
+                    <small style={{ color: 'var(--text-muted)' }}>{page.$path.split('/').at(-2)}</small>
+                </Link>
+                <a onClick={() => setFilter(page.$frontmatter?.folgezettel.value)} style={{ fontSize: "smaller", textDecorationLine: 'none' }}>
+                    <dc.Icon icon='waypoints' className="icon" /> {page.$frontmatter?.folgezettel.value}
+                </a>
             </div>
         )
     }];

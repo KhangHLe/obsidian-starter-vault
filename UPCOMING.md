@@ -1,6 +1,5 @@
-
 ```datacorejsx
-const { Upcoming } = await dc.require("RESOURCES/Datacore Components/Upcoming.jsx");
+const { Upcoming } = await dc.require("RESOURCES/Datacore/Upcoming.jsx");
 return <Upcoming />;
 ```
 

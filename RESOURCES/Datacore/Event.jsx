@@ -1,4 +1,4 @@
-const { Link } = await dc.require('RESOURCES/Datacore Components/Link.jsx');
+const { Link } = await dc.require('RESOURCES/Datacore/Link.jsx');
 const today = dc.luxon.DateTime.now().startOf('day');
 
 const Time = ({ start, end, type = 'time' }) => {
@@ -39,7 +39,7 @@ const Event = ({ page, type }) => {
             <a
                 target="_blank"
                 href={page.$frontmatter['meeting url'].value}
-                style={{ float: 'right' }}
+                style={{ float: 'right', textDecorationLine: 'none' }}
             >
                 <dc.Icon icon='video' className="icon-in-link" />
                 Join meeting

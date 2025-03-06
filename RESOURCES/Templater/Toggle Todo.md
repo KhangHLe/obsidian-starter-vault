@@ -1,16 +1,4 @@
 <%*
-const iconic = app.plugins.getPlugin('iconic');
-let icon = 'lucide-check-circle';
-if (tp.frontmatter['closed'] || tp.frontmatter['recurrence']) {
-    icon = 'lucide-circle';
-}
-iconic.saveFileIcon(
-    { id: tp.file.path(true) },
-    icon,
-    null,
-);
-iconic.refreshIconManagers();
-
 tp.hooks.on_all_templates_executed(async () => {
     const file = tp.file.find_tfile(tp.file.path(true));
     await app.fileManager.processFrontMatter(file, (frontmatter) => {

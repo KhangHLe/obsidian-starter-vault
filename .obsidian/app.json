@@ -14,5 +14,6 @@
   "readableLineLength": true,
   "autoConvertHtml": true,
   "foldHeading": false,
-  "foldIndent": false
+  "foldIndent": false,
+  "defaultViewMode": "preview"
 }

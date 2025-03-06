@@ -8,6 +8,7 @@
     "closed": "datetime",
     "start": "datetime",
     "end": "datetime",
-    "remind at": "datetime"
+    "remind at": "datetime",
+    "participants": "multitext"
   }
 }
