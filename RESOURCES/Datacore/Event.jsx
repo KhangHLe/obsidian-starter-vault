@@ -10,7 +10,7 @@ const Time = ({ start, end, type = 'time' }) => {
             if (+start.startOf('day') >= today.plus({ days: -1 })) {
                 return;
             }
-            return <>{start?.toFormat('MMM d')} </>;
+            return <span style={{ color: 'var(--text-muted)' }}>{start?.toFormat('MMM d')} </span>;
         }
         case 'time':
         default: {
@@ -18,9 +18,9 @@ const Time = ({ start, end, type = 'time' }) => {
                 return;
             }
             if (!end) {
-                return <>{startTime} </>;
+                return <span style={{ color: 'var(--text-muted)' }}>{startTime} </span>;
             }
-            return <>{startTime} - {endTime} </>;
+            return <span style={{ color: 'var(--text-muted)' }}>{startTime} - {endTime} </span>;
         };
     }
 }
@@ -29,9 +29,9 @@ const Event = ({ page, type }) => {
     const start = page.$frontmatter?.start?.value;
     const end = page.$frontmatter?.end?.value;
 
-    return <small>
-        <Time start={start} end={end} type={type} />
-        <Link path={page.$path}>
+    return <small style={{ display: 'flex' }}>
+        <Link path={page.$path} style={{ flexGrow: 1 }}>
+            <Time start={start} end={end} type={type} />
             <dc.Icon icon='calendar-days' className="icon-in-link" />
             {page.$name}
         </Link>

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "58db46e795cc7bdf",
+        "id": "92bbf68881b3c8f8",
         "type": "tabs",
         "children": [
           {
-            "id": "bb662377b94d5854",
+            "id": "cb7f7d04a08b7300",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -222,18 +222,21 @@
       "iconic:Open rulebook": true
     }
   },
-  "active": "bb662377b94d5854",
+  "active": "cb7f7d04a08b7300",
   "lastOpenFiles": [
-    "PROJECTS/Vault Onboarding/(Optional) Learn the Zettelkasten Method.md",
     "TODAY.md",
-    "RESOURCES/Datacore/Task.jsx",
-    "LOGBOOK.md",
-    "RESOURCES/Datacore/Logbook.jsx",
-    "RESOURCES/Datacore/Today.jsx",
+    "RESOURCES/Datacore/Event.jsx",
+    "AREAS/Work/Lorem Ipsum Standup.md",
+    "PROJECTS/Vault Onboarding/(Optional) Learn the BASB Method.md",
+    "PROJECTS/Vault Onboarding/(Optional) Learn the Zettelkasten Method.md",
+    "UPCOMING.md",
     "ANYTIME.md",
     "SOMEDAY.md",
+    "LOGBOOK.md",
+    "RESOURCES/Datacore/Task.jsx",
+    "RESOURCES/Datacore/Logbook.jsx",
+    "RESOURCES/Datacore/Today.jsx",
     "PROJECTS/Vault Onboarding/Learn Task Management.md",
-    "UPCOMING.md",
     "RESOURCES/Datacore/Upcoming.jsx",
     "RESOURCES/Datacore/DateUtil.js",
     "RESOURCES/Datacore/Link.jsx",
@@ -241,13 +244,10 @@
     "INBOX/Not a Child.md",
     "PROJECTS/Vault Onboarding/My First Zettel.md",
     "INBOX/My First Zettel Child.md",
-    "RESOURCES/Datacore/Event.jsx",
     "PROJECTS/Vault Onboarding/Learn Capturing.md",
     "RESOURCES/Datacore/Anytime.jsx",
     "RESOURCES/Datacore/Zettelkasten.jsx",
     "RESOURCES/Datacore/Folder.jsx",
-    "PROJECTS/Vault Onboarding/(Optional) Learn the BASB Method.md",
-    "AREAS/Work/Lorem Ipsum Standup.md",
     "PROJECTS/Vault Onboarding/Add Task Button.png",
     "RESOURCES/Daily Notes/2025-01-16.md",
     "PROJECTS/Vault Onboarding/Meeting Event Example.md",
