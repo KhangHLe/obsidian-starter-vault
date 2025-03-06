@@ -46,7 +46,7 @@ const Upcoming = () => {
         AND !path(RESOURCES) 
         AND (
             (!closed AND (
-                (scheduled > date(today) AND scheduled <= date(today) + dur(7 days)) 
+                (striptime(scheduled) > date(today) AND striptime(scheduled) <= date(today) + dur(7 days)) 
                 OR (!scheduled AND (deadline > date(today) AND deadline <= date(today) + dur(7 days)))
             ))
             OR (striptime(start) > date(today) AND striptime(start) <= date(today) + dur(7 days))

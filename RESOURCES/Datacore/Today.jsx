@@ -31,7 +31,7 @@ const Today = () => {
     const query = dc.useQuery(`@page 
         AND !path(RESOURCES) 
         AND (
-            (!closed AND (scheduled <= date(today) OR deadline = date(today))) 
+            (!closed AND (striptime(scheduled) <= date(today) OR deadline = date(today))) 
             OR striptime(start) = striptime(date(today))
             OR (
                 repeats AND (start OR end)

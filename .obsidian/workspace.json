@@ -4,12 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "edfa89a9b0ec6618",
+        "id": "58db46e795cc7bdf",
         "type": "tabs",
         "children": [
           {
-            "id": "c28b03d6a5f34dbb",
+            "id": "bb662377b94d5854",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -27,6 +28,7 @@
                   "unlinkedCollapsed": true
                 }
               },
+              "pinned": true,
               "icon": "lucide-file",
               "title": "TODAY"
             }
@@ -220,30 +222,32 @@
       "iconic:Open rulebook": true
     }
   },
-  "active": "c28b03d6a5f34dbb",
+  "active": "bb662377b94d5854",
   "lastOpenFiles": [
     "PROJECTS/Vault Onboarding/(Optional) Learn the Zettelkasten Method.md",
     "TODAY.md",
+    "RESOURCES/Datacore/Task.jsx",
     "LOGBOOK.md",
+    "RESOURCES/Datacore/Logbook.jsx",
+    "RESOURCES/Datacore/Today.jsx",
     "ANYTIME.md",
-    "UPCOMING.md",
-    "ZETTELKASTEN.md",
     "SOMEDAY.md",
+    "PROJECTS/Vault Onboarding/Learn Task Management.md",
+    "UPCOMING.md",
+    "RESOURCES/Datacore/Upcoming.jsx",
+    "RESOURCES/Datacore/DateUtil.js",
+    "RESOURCES/Datacore/Link.jsx",
+    "ZETTELKASTEN.md",
+    "INBOX/Not a Child.md",
+    "PROJECTS/Vault Onboarding/My First Zettel.md",
+    "INBOX/My First Zettel Child.md",
     "RESOURCES/Datacore/Event.jsx",
     "PROJECTS/Vault Onboarding/Learn Capturing.md",
     "RESOURCES/Datacore/Anytime.jsx",
-    "RESOURCES/Datacore/DateUtil.js",
     "RESOURCES/Datacore/Zettelkasten.jsx",
-    "PROJECTS/Vault Onboarding/Learn Task Management.md",
-    "RESOURCES/Datacore/Task.jsx",
     "RESOURCES/Datacore/Folder.jsx",
-    "RESOURCES/Datacore/Someday.jsx",
-    "RESOURCES/Datacore/Logbook.jsx",
-    "PROJECTS/Vault Onboarding/My First Zettel.md",
     "PROJECTS/Vault Onboarding/(Optional) Learn the BASB Method.md",
-    "RESOURCES/Datacore/Link.jsx",
     "AREAS/Work/Lorem Ipsum Standup.md",
-    "PROJECTS/Vault Onboarding/Combine Zettelkasten and BASB.html",
     "PROJECTS/Vault Onboarding/Add Task Button.png",
     "RESOURCES/Daily Notes/2025-01-16.md",
     "PROJECTS/Vault Onboarding/Meeting Event Example.md",
@@ -256,8 +260,6 @@
     "INBOX/Test Zettel 2.md",
     "INBOX/Test Zettel.md",
     "RESOURCES/Templater/Create new event.md",
-    "ARCHIVES/Test/Test.md",
-    "INBOX/Test Rename.md",
     "PROJECTS/Vault Onboarding/Create new task button.png",
     "PROJECTS/Vault Onboarding/Reschedule button.png",
     "AREAS/Health/2024 Cigna Health Insurance ID.png",

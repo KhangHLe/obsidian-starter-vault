@@ -1,6 +1,5 @@
 ---
 scheduled: 2024-09-01
-deadline: 2025-03-06
 ---
 See [[My First Zettel]] to learn how to create a zettel in this vault.
 

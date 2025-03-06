@@ -69,7 +69,7 @@ const Checkbox = ({ page }) => {
         process();
     }, [page]);
 
-    return <a onClick={handleClick} style={{ marginRight: '8px' }}>
+    return <a onClick={handleClick} className="icon-hover" style={{ display: 'flex', marginRight: page.$frontmatter?.closed ? '14px' : '8px', textDecorationLine: 'none', minWidth: 'fit-content', alignItems: 'center' }}>
         <dc.Icon icon={icon} className="task-icon" />
         {page.$frontmatter?.closed && (
             page.$frontmatter?.closed?.value.toFormat('MMM d')
